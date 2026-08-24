@@ -1,0 +1,38 @@
+{
+  "name": "genpark-c2c-instant-resale-ai-pricing-shipping-label-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - C2C circular resale marketplace listing optimizer with AI price estimation, anonymous peer-to-peer shipping QR generator, and instant wallet payout.",
+  "author": "genpark",
+  "category": "recommerce",
+  "tags": [
+    "c2c-marketplace",
+    "ai-pricing",
+    "qr-shipping-label",
+    "anonymous-delivery",
+    "mercari"
+  ],
+  "inputs": {
+    "item_title": {
+      "type": "string"
+    },
+    "item_photos_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "listing_id": {
+      "type": "string"
+    },
+    "suggested_instant_sell_price_jpy": {
+      "type": "number"
+    },
+    "estimated_sale_probability_within_24h_pct": {
+      "type": "number"
+    },
+    "prepaid_qr_shipping_label_code": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
